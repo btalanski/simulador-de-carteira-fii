@@ -30,7 +30,7 @@ export default function Portfolio() {
 
   return (
     <div class="container">
-      <div className="rounded border-2 p-6">
+      <div className="rounded border-2 p-6 border-gray-700">
         <p class="text-4xl mx-5 my-2">Carteira</p>
         <form class="flex flex-col">
           <div class="flex flex-row row header">
@@ -47,8 +47,8 @@ export default function Portfolio() {
           ))}
           <button class="rounded-sm bg-gray-900 p-5 m-4 text-gray-100" onClick={addStock}>Adicionar fundo</button>
         </form>
+		  <Summary stocks={stocks} />
       </div>
-      <Summary stocks={stocks} />
     </div>
   );
 }
