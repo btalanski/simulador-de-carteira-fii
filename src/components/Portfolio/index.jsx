@@ -45,9 +45,14 @@ export default function Portfolio() {
           {stocks.map((stock) => (
             <PortifolioRow stock={stock} onUpdate={onUpdateStock} />
           ))}
-          <button class="rounded-sm bg-gray-900 p-5 m-4 text-gray-100" onClick={addStock}>Adicionar fundo</button>
+          <button
+            class="rounded-sm bg-gray-900 p-5 m-4 text-gray-100"
+            onClick={addStock}
+          >
+            Adicionar fundo
+          </button>
         </form>
-		  <Summary stocks={stocks} />
+        <Summary stocks={stocks} />
       </div>
     </div>
   );

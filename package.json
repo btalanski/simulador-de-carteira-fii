@@ -1,43 +1,44 @@
 {
-  "name": "simulador-de-carteira-fii",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@craco/craco": "^5.7.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "autoprefixer": "^10.0.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "node-sass": "^4.14.1",
-    "postcss-cli": "^8.1.0",
-    "postcss-loader": "^4.0.4",
-    "postcss-nested": "^5.0.1",
-    "prettier": "^2.1.2",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
-    "react-scripts": "3.4.4",
-    "tailwindcss": "^1.9.5"
-  },
-  "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "simulador-de-carteira-fii",
+    "version": "0.1.0",
+    "private": true,
+    "license": "MIT",
+    "dependencies": {
+        "@craco/craco": "^5.7.0",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.5.0",
+        "@testing-library/user-event": "^7.2.1",
+        "autoprefixer": "^10.0.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "node-sass": "^4.14.1",
+        "postcss-cli": "^8.1.0",
+        "postcss-loader": "^4.0.4",
+        "postcss-nested": "^5.0.1",
+        "prettier": "^2.1.2",
+        "react": "^17.0.0",
+        "react-dom": "^17.0.0",
+        "react-scripts": "3.4.4",
+        "tailwindcss": "^1.9.5"
+    },
+    "scripts": {
+        "start": "craco start",
+        "build": "craco build",
+        "test": "craco test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }

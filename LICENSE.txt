@@ -1,38 +1,3 @@
-## Simulador de carteira de fundos imobiliários
-
-Você pode simular e comparar os rendimentos de múltiplas carteiras e identificar as melhores oportunidades de onde investir seu dinheiro.
-
-Desenvolvido utilizando `React` e `create-react-app`.
-
-### To-dos
-
-- [ ] Suportar multiplas carteiras
-- [ ] Persistir carteiras na memória
-- [ ] Suporte para uso offline
-- [ ] Layout responsivo
-
-### Instalação
-
-Clone o repositório e execute:
-
-```bash
-npm install
-```
-
-### Uso
-
-Execute o comando a seguir na raiz do projeto:
-
-```bash
-npm start
-```
-
-### Contribuindo
-
-Pull requests serão bem vindas. Para grandes mudanças, por favor, crie uma `issue` primeiro para discutir as alterações.
-
-### Licença
-
 MIT License
 
 Copyright (c) 2020 Bruno Talanski
