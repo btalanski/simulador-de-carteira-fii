@@ -96,7 +96,7 @@ export default function PortifolioRow({ stock, onUpdate }) {
         />
       </div>
       <div class="flex-1 px-4 py-2 ">
-        <input class="w-full p-2 bg-gray-300" type="text" value="E" />
+        <input class="w-full p-2 bg-gray-300" type="text" value={ ((stock.roi / stock.cost) * 100).toFixed(2)  } />
       </div>
       <div class="flex-1 px-4 py-2  ">
         <input class="w-full p-2 bg-gray-300" type="text" value={stock.qt * stock.cost} />
