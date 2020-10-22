@@ -1,5 +1,4 @@
 import React from 'react';
-import AddFund from './components/AddFund';
 import Portfolio from './components/Portfolio';
 import './App.css';
 
