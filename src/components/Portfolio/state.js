@@ -3,8 +3,6 @@ export const initialState = [{
         fund: 'HCTR11',
         cost: 143.59,
         roi: 2.25,
-        minQt: 0,
-        maxQt: 100,
         qt: 1,
     },
     {
@@ -12,8 +10,6 @@ export const initialState = [{
         fund: 'ARCT11',
         cost: 1140.0,
         roi: 10.24,
-        minQt: 0,
-        maxQt: 100,
         qt: 1,
     },
     {
@@ -21,8 +17,6 @@ export const initialState = [{
         fund: 'TGAR11',
         cost: 134.97,
         roi: 1,
-        minQt: 0,
-        maxQt: 100,
         qt: 1,
     },
     {
@@ -30,8 +24,6 @@ export const initialState = [{
         fund: 'BBRC11',
         cost: 147.5,
         roi: 0.94,
-        minQt: 0,
-        maxQt: 100,
         qt: 1,
     },
     {
@@ -39,8 +31,6 @@ export const initialState = [{
         fund: 'MFII11',
         cost: 130.49,
         roi: 1.01,
-        minQt: 0,
-        maxQt: 100,
         qt: 1,
     },
     {
@@ -48,8 +38,6 @@ export const initialState = [{
         fund: 'BNFS11',
         cost: 125.42,
         roi: 0.95,
-        minQt: 0,
-        maxQt: 100,
         qt: 1,
     },
 ];

@@ -36,8 +36,7 @@ export default function Portfolio() {
           <div class="flex flex-row row header">
             <div class="flex-1 text-center">Fundo</div>
             <div class="flex-1 text-center">Custo</div>
-            <div class="flex-1 min-w-1/4 text-center">Cotas</div>
-            <div class="flex-1 text-center">Qt. cotas</div>
+            <div class="flex-1 text-center">Cotas</div>
             <div class="flex-1 text-center">Rendimento</div>
             <div class="flex-1 text-center">D/Y %</div>
             <div class="flex-1 text-center">Total</div>
@@ -46,7 +45,7 @@ export default function Portfolio() {
             <PortifolioRow stock={stock} onUpdate={onUpdateStock} />
           ))}
           <button
-            class="rounded-sm bg-gray-900 p-5 m-4 text-gray-100"
+            class="rounded-sm bg-gray-700 p-5 m-4 text-gray-100"
             onClick={addStock}
           >
             Adicionar fundo

@@ -1,5 +1,5 @@
 import React from 'react';
-import CurrencyInput from "../Form/CurrencyInput";
+import CurrencyInput from '../Form/CurrencyInput';
 
 export default function PortifolioRow({ stock, onUpdate }) {
   const onChangeFundName = (e) => {
@@ -16,17 +16,30 @@ export default function PortifolioRow({ stock, onUpdate }) {
     });
   };
 
-  const updateMinQt = (e) =>
-    onUpdate({
-      ...stock,
-      minQt: e.target.value,
-    });
+  const addQt = (e) => {
+    e.preventDefault();
 
-  const updateMaxQt = (e) =>
     onUpdate({
       ...stock,
-      maxQt: e.target.value,
+      qt: (stock.qt += 1),
     });
+  };
+
+  const subtractQt = (e) => {
+    e.preventDefault();
+
+    if (stock.qt === 0) return;
+
+    let newQt = stock.qt - 1;
+    if (newQt < 0) {
+      newQt = 0;
+    }
+
+    onUpdate({
+      ...stock,
+      qt: newQt,
+    });
+  };
 
   const updateQt = (e) =>
     onUpdate({
@@ -75,35 +88,22 @@ export default function PortifolioRow({ stock, onUpdate }) {
           onChange={onChangeCost}
         />
       </div>
-      <div class="flex flex-1 px-4 py-2 min-w-1/4 flex-wrap">
+      <div class="flex flex-1 px-4 py-2 justify-center flex-wrap">
+        <button
+          class="w-1/4 p-2 bg-gray-900 text-center border-1 text-gray-100"
+          onClick={subtractQt}
+        >
+          -
+        </button>
         <input
-          class="w-1/4 p-2 bg-gray-900 text-center"
-          type="number"
-          value={stock.minQt}
-          onChange={updateMinQt}
-        />
-        <input
-          class="w-1/2"
-          type="range"
-          min={stock.minQt}
-          max={stock.maxQt}
-          value={stock.qt}
-          onChange={updateQt}
-        />
-        <input
-          class="w-1/4 p-2 bg-gray-900 text-center"
-          type="number"
-          value={stock.maxQt}
-          onChange={updateMaxQt}
-        />
-      </div>
-      <div class="flex-1 px-4 py-2 ">
-        <input
-          class="w-full p-2 bg-gray-900 text-center"
+          class="w-1/2 p-2 bg-gray-900 text-center"
           type="text"
           value={stock.qt}
           onChange={updateQt}
         />
+        <button class="w-1/4 p-2 bg-gray-900 text-center" onClick={addQt}>
+          +
+        </button>
       </div>
       <div class="flex-1 px-4 py-2 ">
         <input
