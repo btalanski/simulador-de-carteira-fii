@@ -1,7 +1,7 @@
 import React from 'react';
-import CurrencyInput from '../Form/CurrencyInput';
+import CurrencyInput from '../../Form/CurrencyInput';
 
-export default function PortifolioRow({ stock, onUpdate }) {
+export default function Stock({ stock, onUpdate }) {
   const onChangeFundName = (e) => {
     onUpdate({
       ...stock,
